@@ -21,7 +21,6 @@ def get_all_words_from(url):
 	# r'\w' = interprets it as individual characters, instead of an escaped character
 	return re.findall(r'\w+', raw_text)
 
-# However, this can all be cut down to 2 lines: 
 def count_occurences_in(word_list):
 	word_list = {}
 	for word in all_words: 
